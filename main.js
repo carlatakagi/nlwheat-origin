@@ -3,9 +3,7 @@ const linksSocialMedia = {
     youtube: 'UCDKOii6NxthT5uFVjvTfUlA',
     facebook: 'carlatatakagi',
     instagram: 'carlatatakagi',
-    instagram: 'carlatatakagi',
     twitter: '_winterwinds'
-
 }
 
 function changeSocialMediaLinks() {
@@ -13,7 +11,6 @@ function changeSocialMediaLinks() {
     const social = li.getAttribute('class');
     
     li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
   }        
 }
 
@@ -31,7 +28,6 @@ function  getGitHubProfileInfos() {
     userImage.src = data.avatar_url
     userLogin.textContent = data.login
   })
-
 }
 
 getGitHubProfileInfos()
